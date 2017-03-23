@@ -1,9 +1,11 @@
 Innkjopsliste::Application.routes.draw do
+  root to: "welcome#index"
+
   get "welcome/index"
+  get "articles/new", to: "articles#new", as: "articles"
 
   resources :articles 
 
-  root to: "welcome#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

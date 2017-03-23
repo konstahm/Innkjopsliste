@@ -1,4 +1,7 @@
 %h1 HELLO RAILS!
 %ul
   - for article in @article
-    %li= article.id
+    %li= article.header
+    %li= article.content
+    // TODO make only header visible, and make each element expandable
+=link_to "Article", articles_path
