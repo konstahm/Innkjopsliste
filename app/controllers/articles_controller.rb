@@ -9,7 +9,10 @@ class ArticlesController < ApplicationController
 	def create
 		@article = Article.new(params[:article])
 		# TODO, make if check, render:new if fails
-		@article.save
-		render :new
+		if @article.save
+			redirect_to root
+		else
+			render :new
+		end
 	end
 end
