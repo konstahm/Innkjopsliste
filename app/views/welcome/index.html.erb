@@ -1,6 +1,6 @@
 <h1>HELLO RAILS!</h1>
-<%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.text_field :header %>
-  <%= f.text_area :content, size: "60x12" %>
-  <%= f.submit "Create" %>
-<% end %>
+<ul>
+	<% for article in @article %>
+		<li><%= article.id %></li>
+	<% end %>
+</ul>  

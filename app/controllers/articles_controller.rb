@@ -5,6 +5,8 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(params[:article])
+		# TODO, make if check, render:new if fails
+		@article.save
 		render :new
 	end
 end
