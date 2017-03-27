@@ -19,12 +19,13 @@ body {
 .header {
 	color: $text-color;
 	font-family: $font-stack;
+	text-align: center;
 }
 
 ul {
 	background-color: $front-color;
 	padding: 10px;
-	width: 100px;
+	width: 50%;
 
 	li {
 		margin-top: 5px;
@@ -33,8 +34,15 @@ ul {
 		text-decoration: none;
 		list-style-type: none;
 	}
-}
 
+	.dropdown {
+		display: none;
+	}
+
+	.dropdown:click {
+		display: inline-block;
+	}
+}
 .button{
 	width: 100px;
 	height: 50px;
