@@ -8,11 +8,8 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(params[:article])
-		# TODO, make if check, render:new if fails
-		if @article.save
-			redirect_to root
-		else
-			render :new
-		end
+		# TODO: make som kind of check
+		@article.save
+		render :new
 	end
 end

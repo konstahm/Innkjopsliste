@@ -6,17 +6,33 @@ $font-stack:	Verdana, Helvetica, sans-serif;
 $text-color:	rgb(200, 200, 200);
 $back-color:	rgb(130, 130, 130);
 $front-color:	rgb(90, 90, 90);
+$front-inline-color:	rgb(110, 110, 110);
 
 body {
 	/* random values, should be gray */
 	background-color: $back-color;
 	padding: 20px;
 	margin: 20px;
+	color: $text-color;
 }
 
 .header {
 	color: $text-color;
 	font-family: $font-stack;
+}
+
+ul {
+	background-color: $front-color;
+	padding: 10px;
+	width: 100px;
+
+	li {
+		margin-top: 5px;
+		padding: 5px;
+		background-color: $front-inline-color;
+		text-decoration: none;
+		list-style-type: none;
+	}
 }
 
 .button{
@@ -39,5 +55,4 @@ body {
 	vertical-align: middle;
 	line-height: 50px;
 	}
-
 }
