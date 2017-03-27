@@ -1,6 +1,8 @@
+%h1{:class => "header"} Legg til ny vare
 = form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f|
   = f.text_field :header
   = f.text_area :content, size: "60x12"
   = f.submit "Create"
 
-= link_to "Home", root_path
+%div{:class => "button"}
+  = link_to "Home", root_path
