@@ -42,6 +42,11 @@ ul {
 	.dropdown:click {
 		display: inline-block;
 	}
+
+	.close{
+		float: right;
+		display: inline-block;
+	}
 }
 .button{
 	width: 100px;
